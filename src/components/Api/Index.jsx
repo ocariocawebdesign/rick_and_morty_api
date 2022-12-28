@@ -30,7 +30,7 @@ export default function Api() {
 
     function geo(){
        const navigation = navigator.geolocation.getCurrentPosition( location => {
-            console.log('Localização:' + location.host);
+            console.log('Localização:' + location);
     })}
 
 
