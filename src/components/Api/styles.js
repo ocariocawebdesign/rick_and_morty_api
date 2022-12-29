@@ -33,9 +33,6 @@ transition: opacity 0.5s ease 0s;
 border-radius: 0.5rem;
 }
 
-&img :hover{
-    opacity:10;
-}
 
 p{
     margin-bottom:0;

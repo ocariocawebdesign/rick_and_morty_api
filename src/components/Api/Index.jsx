@@ -29,8 +29,9 @@ export default function Api() {
     }
 
     function geo(){
-       const navigation = navigator.geolocation.getCurrentPosition( location => {
-            console.log('Localização:' + location);
+        //https://bradhick.medium.com/react-acessando-a-localiza%C3%A7%C3%A3o-de-um-dispositivos-com-recurso-nativo-a7d07037da5f
+        navigator.geolocation.getCurrentPosition( location => {
+            console.log(location);
     })}
 
 
@@ -52,7 +53,7 @@ export default function Api() {
                                 <div className="col-md-6 col-lg-6">
                                     <DivContainer>
                                         <div key={persona.id}>
-                                            <img className="img-fluid" src={persona.image} />
+                                            <img className="img-fluid" src={persona.image} alt="photo" />
                                             <h4 className="mt-2">{persona.name}</h4>
                                             <p>
                                                 Última localização conhecida: {persona.location.name}
